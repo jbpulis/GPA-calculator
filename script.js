@@ -22,9 +22,7 @@ app.config(function($routeProvider) {
 });
 
 app.controller('MainController', function($scope) {
-  $scope.message = 'To create or add a new class to a semester simply slick add.' <br> 
-  'To review or edit an existing semester please click edit' <br> 
-  'If you are dine with the GPA monitor/forcaster just click logout (it is all pretty intuitive');
+  $scope.message = 'To create or add a new class to a semester simply slick add.To review or edit an existing semester please click edit If you are dine with the GPA monitor/forcaster just click logout (it is all pretty intuitive)';
 });
 
 app.controller('EditController', function($scope) {

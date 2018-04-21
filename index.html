@@ -16,21 +16,26 @@
     </script>
     <script type="text/ng-template" id="pages/new.html">
       <h1>New</h1>
-      <select>
-          <option value="A+">A+</option>
-          <option value="A">A</option>
-          <option value="A-">A-</option>
-          <option value="B+">B+</option>
-          <option value="B">B</option>
-          <option value="B-">B-</option>
-          <option value="C+">C+</option>
-          <option value="C">C</option>
-          <option value="C-">C-</option>
-          <option value="D+">D+</option>
-          <option value="D">D</option>
-          <option value="D-">D-</option>
-          <option value="F">F</option>
-      </select>
+      <form action="/action_page.php">
+          Class Name: <input type="text" name="cName"><br>
+          <select>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+            <option value="D-">D-</option>
+            <option value="F">F</option>
+          </select>
+          Class Weight: <input type="text" name="cWeight"><br>
+          <input type="submit" value="Submit">
+      </form>
       <h3>{{message}}</h3>
     </script>
 <div class="main">

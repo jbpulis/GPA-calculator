@@ -30,5 +30,5 @@ app.controller('EditController', function($scope) {
 });
 
 app.controller('NewController', function($scope) {
-  $scope.message = 'Hello from NewController';
+  $scope.message = '';
 });

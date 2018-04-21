@@ -1,4 +1,4 @@
-	var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', ['ngRoute']);
 
 app.config(function($routeProvider) {
   $routeProvider
@@ -30,5 +30,5 @@ app.controller('BlogController', function($scope) {
 });
 
 app.controller('AboutController', function($scope) {
-  $scope.message = 'AboutController';
+  $scope.message = 'Hello from AboutController';
 });

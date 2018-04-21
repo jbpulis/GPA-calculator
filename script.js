@@ -1,34 +1,34 @@
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('GPAapp', ['ngRoute']);
 
 app.config(function($routeProvider) {
   $routeProvider
 
   .when('/', {
-    templateUrl : 'pages/home.html',
-    controller  : 'HomeController'
+    templateUrl : 'pages/main.html',
+    controller  : 'MainController',
   })
 
-  .when('/blog', {
-    templateUrl : 'pages/blog.html',
-    controller  : 'BlogController'
+  .when('/edit', {
+    templateUrl : 'pages/edit.html',
+    controller  : 'EditController'
   })
 
-  .when('/about', {
-    templateUrl : 'pages/about.html',
-    controller  : 'AboutController'
+  .when('/new', {
+    templateUrl : 'pages/new.html',
+    controller  : 'NewController'
   })
 
   .otherwise({redirectTo: '/'});
 });
 
-app.controller('HomeController', function($scope) {
-  $scope.message = 'Hello from HomeController';
+app.controller('MainController', function($scope) {
+  $scope.message = 'Hello from MainController';
 });
 
-app.controller('BlogController', function($scope) {
-  $scope.message = 'Hello from BlogController';
+app.controller('EditController', function($scope) {
+  $scope.message = 'Hello from EditController';
 });
 
-app.controller('AboutController', function($scope) {
-  $scope.message = 'Hello from AboutController';
+app.controller('NewController', function($scope) {
+  $scope.message = 'Hello from NewController';
 });

@@ -35,22 +35,25 @@
 </div>
     
     <!-- View / need to figure out how to put them in different files this is ugly -->
+<!-- main -->
     <script type="text/ng-template" id="pages/main.html">
       <h1>Main</h1>
       <h3>{{message}}</h3>
     </script>
 
+<!-- edit -->
     <script type="text/ng-template" id="pages/edit.html">
       <h1>Edit</h1>
       <ul>
         <li><a href= #/editGPA>Starting GPA</a></li>
       </ul>
       <ul>
-        <li><a href= #/editClass>class</a></li>
+        <li><a href= #/viewSemester>class</a></li>
       </ul>
       <h3>{{message}}</h3>
     </script>
 
+<!-- editGPA -->
     <script type="text/ng-template" id="pages/editGPA.html">
       <h1>Edit GPA</h1>
       <form action="/action_page.php">
@@ -62,6 +65,47 @@
       <h3>{{message}}</h3>
     </script>
 
+
+<!-- viewSemester -->
+    <script type="text/ng-template" id="pages/viewSemester.html">
+      <h1>Semester *year from DB</h1>
+        <table>
+            <tr>
+                <th><a href= #/editClass>Class Name from DB</a></th>
+                <th>
+                  <select>
+                      <option value="A+">A+</option>
+                      <option value="A">A</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B">B</option>
+                      <option value="B-">B-</option>
+                      <option value="C+">C+</option>
+                      <option value="C">C</option>
+                      <option value="C-">C-</option>
+                      <option value="D+">D+</option>
+                      <option value="D">D</option>
+                      <option value="D-">D-</option>
+                      <option value="F">F</option>
+                  </select>
+                </th> 
+                <th>grade % from the DB</th>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>GPA</a></th>
+                <th>
+                    <textarea rows="1" cols="5" name="GPAestimate" id="GPAestimate"></textarea>
+                </th>
+            </tr>
+        </table>
+      <input type="button" value="update DB" onclick=""/>
+      <input type="button" value="back" onclick="window.location.href='#/edit'"/>
+      <h3>{{message}}</h3>
+    </script>
+
+<!-- editClass -->
     <script type="text/ng-template" id="pages/editClass.html">
       <h1>Edit Class</h1>
       <form action="/action_page.php">
@@ -97,6 +141,7 @@
       <h3>{{message}}</h3>
     </script>
 
+<!-- New -->
     <script type="text/ng-template" id="pages/new.html">
       <h1>New</h1>
       <form action="/action_page.php">

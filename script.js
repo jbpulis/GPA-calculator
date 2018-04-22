@@ -28,6 +28,11 @@ app.config(function($routeProvider) {
     controller  : 'GPAController',
   })
 
+    .when('/viewSemester', {
+    templateUrl : 'pages/viewSemester.html',
+    controller  : 'SemesterController',
+  })
+
   .otherwise({redirectTo: '/'});
 });
 
@@ -49,4 +54,8 @@ app.controller('ClassController', function($scope) {
 
 app.controller('GPAController', function($scope) {
   $scope.message = 'Well, Were getting there.';
+});
+
+app.controller('SemesterController', function($scope) {
+  $scope.message = 'table needs populated from the DB';
 });

@@ -18,6 +18,16 @@ app.config(function($routeProvider) {
     controller  : 'NewController'
   })
 
+  .when('/editClass', {
+    templateUrl : 'pages/editClass.html',
+    controller  : 'ClassController',
+  })
+
+  .when('/editGPA', {
+    templateUrl : 'pages/editGPA.html',
+    controller  : 'GPAController',
+  })
+
   .otherwise({redirectTo: '/'});
 });
 
@@ -31,4 +41,12 @@ app.controller('EditController', function($scope) {
 
 app.controller('NewController', function($scope) {
   $scope.message = '';
+});
+
+app.controller('ClassController', function($scope) {
+  $scope.message = 'make this work';
+});
+
+app.controller('GPAController', function($scope) {
+  $scope.message = 'Well, Were getting there.';
 });

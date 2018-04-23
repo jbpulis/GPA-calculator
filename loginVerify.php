@@ -1,7 +1,7 @@
 <?php
 $username = $_GET['fname'];
 $password = $_GET['fpass'];
-$con=mysqli_connect("mysql","database_user","database_password","mydatabase");
+$con=mysqli_connect("localhost","Jason","M1chelle87","final");
 // Check connection
 if (mysqli_connect_errno())
   {

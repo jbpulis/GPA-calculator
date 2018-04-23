@@ -14,6 +14,10 @@
                 <a href="#/">
                   <h1 id="header-label">MyGPA</h1>
                 </a>
+                <input type="button" value="Main" onclick="window.location.href='#/'" />
+                <input type="button" value="Edit" onclick="window.location.href='#/edit'" />
+                <input type="button" value="New" onclick="window.location.href='#/new'" />
+                <input type="button" value="Logout" onclick=""/>
             </div>
         </div>
     </div>
@@ -22,12 +26,11 @@
     <div id="center">
         <div id="left-stripe"></div>
             <div id="content"> 
-                <input type="button" value="Signup" onclick="window.location.href='signup.php'" />
-                <input type="button" value="signin" onclick="" />
+                <input type="button" value="submit" onclick="" />
+                <input type="button" value="cancel" onclick="window.location.href='splash.html'" />
             </div>
         <div id="right-stripe"></div>
     </div>
-<script src="script.js"></script>
 </div>
   </body>
 </html>

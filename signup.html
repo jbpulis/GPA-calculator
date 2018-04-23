@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="GPAapp">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+    <link rel="stylesheet" ng-href="style.css">
+  </head>
+  <body>
+<div class="main">
+
+    <div class="navbar" id="header" role="navigation">
+        <div class="container">
+            <div class="navbar-header" id="navbar-header-id">
+                <a href="#/">
+                  <h1 id="header-label">MyGPA</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="center">
+        <div id="left-stripe"></div>
+            <div id="content">
+                <form>
+                    First name:<br>
+                    <input type="text" name="firstname"><br>
+                    Last name:<br>
+                    <input type="text" name="lastname"><br>
+                    Email Address:<br>
+                    <input type="text" name="email"><br>
+                    Confirm Email Address:<br>
+                    <input type="text" name="conEmail"><br>
+                    Password:<br>
+                    <input type="text" name="password"><br>
+                    Confirm Password:<br>
+                    <input type="text" name="conPassword"><br>
+                    <input type="submit" value="Submit">
+                    <input type="button" value="Cancel" onclick="window.location.href='splash.html'" />
+                </form>
+            </div>
+        <div id="right-stripe"></div>
+    </div>
+<script src="script.js"></script>
+</div>
+  </body>
+</html>

@@ -18,21 +18,6 @@ app.config(function($routeProvider) {
     controller  : 'NewController'
   })
 
-  .when('/editClass', {
-    templateUrl : 'pages/editClass.html',
-    controller  : 'ClassController',
-  })
-
-  .when('/editGPA', {
-    templateUrl : 'pages/editGPA.html',
-    controller  : 'GPAController',
-  })
-
-    .when('/viewSemester', {
-    templateUrl : 'pages/viewSemester.html',
-    controller  : 'SemesterController',
-  })
-
   .otherwise({redirectTo: '/'});
 });
 
@@ -46,16 +31,4 @@ app.controller('EditController', function($scope) {
 
 app.controller('NewController', function($scope) {
   $scope.message = '';
-});
-
-app.controller('ClassController', function($scope) {
-  $scope.message = 'make this work';
-});
-
-app.controller('GPAController', function($scope) {
-  $scope.message = 'Well, Were getting there.';
-});
-
-app.controller('SemesterController', function($scope) {
-  $scope.message = 'table needs populated from the DB';
 });

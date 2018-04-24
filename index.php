@@ -1,34 +1,57 @@
 <!doctype html>
 <html ng-app="GPAapp">
   <head>
+  <title>MyGPA-Calculator</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
     <link rel="stylesheet" ng-href="style.css">
   </head>
   <body>
 <div class="main">
-
-    <div class="navbar" id="header" role="navigation">
-        <div class="container">
-            <div class="navbar-header" id="navbar-header-id">
-                <a href="#/">
-                  <h1 id="header-label">MyGPA</h1>
-                </a>
-                <input type="button" value="Main" onclick="window.location.href='#/'" />
-                <input type="button" value="Edit" onclick="window.location.href='#/edit'" />
-                <input type="button" value="New" onclick="window.location.href='#/new'" />
-                <input type="button" value="Logout" onclick=""/>
-            </div>
-        </div>
+    <div class="navbar">
+        <nav id="nav01">
+            <ul id="menu">
+                <li>
+                    <a href="#/" onclick="window.location.href='#/'">Main</a>
+                </li>
+                <li>
+                    <a href="#/edit" onclick="window.location.href='#/edit'">Edit</a>
+                </li>
+                <li>
+                    <a href="#/new" onclick="window.location.href='#/new'">New</a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="nav02">
+            <ul id="menu2">
+                <li>
+                <a href="#/" onclick="window.location.href='#/'">MyGPA</a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="nav03">
+            <ul id="menu3">
+                <li>
+                    <a href="#/login" onclick="window.location.href='#/login'">Log In</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
     
     <div id="center">
         <div id="left-stripe"></div>
+<<<<<<< HEAD:index.html
             <div id="content"> 
               <div ng-view></div>
             </div>
+=======
+>>>>>>> feature/login:index.php
         <div id="right-stripe"></div>
+        <div id="content"> 
+            <div ng-view></div>
+        </div>
+        
     </div>
 <script src="script.js"></script>
 </div>
@@ -145,5 +168,8 @@
       <h3>{{message}}</h3>
     </script>
 
+    <footer id="foot01">
+        <p>  <?php echo date("Y"); ?> GPA-calculator. All rights reserved.</p>
+    </footer>
   </body>
 </html>
